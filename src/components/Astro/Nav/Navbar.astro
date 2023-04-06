@@ -1,0 +1,213 @@
+---
+// import "./Navbar.css";
+// import "./Navbar.js";
+import Menu from "../../svg/menu.astro";
+import Theme from "../../svg/theme.astro";
+---
+
+<header class="headerContainer">
+  <nav class="nav">
+    <a class="textLogo" aria-label="Ir al inicio" href="/"
+      ><span class="colorBracket">{"{"}</span> FL <span class="colorBracket"
+        >{"}"}</span
+      ></a
+    >
+    <span class="navToggle">
+      <Menu />
+    </span>
+    <div class="menu" id="menu">
+      <a class="btnNavBar" href="/projects" id="linkProject"
+        >Projects<span class="colorBracket">[ ]</span></a
+      >
+      <a class="btnNavBar" href="/skills" id="linkSkills"
+        >Skills<span class="colorBracket">[ ]</span></a
+      >
+      <a class="btnNavBar" href="/about" id="linkAbout"
+        >About<span class="colorBracket">[ ]</span></a
+      >
+      <button
+        class="themeMode"
+        title="theme"
+        aria-label="Cambiar el tema a claro u oscuro"
+      >
+        <span class="theme"><Theme /></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<style>
+  .headerContainer {
+    position: fixed;
+    background-color: var(--color-bg);
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 32px 10px 26px;
+    font-weight: 600;
+    max-width: 820px;
+    margin: 0 auto;
+  }
+
+  .textLogo {
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    transition: color 0.3s;
+  }
+
+  .textLogo:hover {
+    color: var(--color-primary);
+  }
+
+  .textLogo:hover .colorBracket {
+    color: #fff;
+  }
+
+  .colorBracket {
+    color: var(--color-primary);
+    transition: color 0.3;
+  }
+
+  .navToggle {
+    display: none;
+    cursor: pointer;
+    fill: var(--color-primary);
+  }
+  .navToggle:hover {
+    fill: #fff;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .btnNavBar {
+    font-family: "Courier New", Courier, monospace;
+    font-weight: 700;
+    margin-left: 25px;
+    padding-left: 7px;
+    transition: color 0.3s;
+  }
+
+  .btnNavBar:hover {
+    margin-left: 20px;
+    color: var(--color-primary);
+  }
+
+  .btnNavBar:hover .colorBracket {
+    color: #fff;
+  }
+
+  .themeMode {
+    width: 20px;
+    height: 20px;
+    background-color: var(--color-bg);
+    border: none;
+    margin-left: 30px;
+  }
+
+  .theme {
+    position: relative;
+    fill: var(--color-text-base);
+    transition: fill 0.3s;
+    cursor: pointer;
+  }
+
+  .theme:hover {
+    fill: var(--color-primary);
+  }
+
+  @media (max-width: 768px) {
+    .menu {
+      flex-direction: column;
+      position: fixed;
+      align-items: center;
+      left: 100%;
+      top: 63px;
+      width: 100%;
+      height: calc(100% - 63px);
+      padding-top: 60px;
+      transition: left 0.3s;
+      font-size: 30px;
+      background-color: var(--color-bg);
+      transition: all 0.6s;
+    }
+    .theme {
+      width: 40px;
+      height: 40px;
+      margin-top: 30px;
+    }
+    .btnNavBar {
+      padding: 20px;
+      border: none;
+      margin: 0;
+    }
+    .btnNavBar:hover {
+      margin: 0px;
+    }
+    .navToggle {
+      display: block;
+    }
+    .menuOn {
+      left: 0;
+    }
+    .menuOff {
+      left: 100%;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: var(--color-text-base);
+  }
+  a:visited {
+    color: var(--color-text-base);
+  }
+</style>
+
+<script>
+  // Code for toggle menu
+  const navToggle = document.querySelector(".navToggle");
+  const navMenu = document.querySelector("menu");
+  // const linkAbout = document.querySelector("linkAbout");
+  // const linkSkills = document.querySelector("linkSkills");
+  // const linkProject = document.querySelector("linkProject");
+
+  navToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("menuOn");
+  });
+
+  // linkAbout.addEventListener("click", () => {
+  //   navMenu.classList.toggle("menuOn");
+  // });
+  // linkProject.addEventListener("click", () => {
+  //   navMenu.classList.toggle("menuOn");
+  // });
+  // linkSkills.addEventListener("click", () => {
+  //   navMenu.classList.toggle("menuOn");
+  // });
+
+  // Dark mode
+  // const preferenceOS = window.matchMedia('(prefers-color-scheme: dark)').matches
+  //   ? 'dark'
+  //   : 'light'
+  const mode = document.querySelector(".themeMode");
+  const setMode = (theme) => {
+    document.documentElement.setAttribute("data-theme", theme);
+    localStorage.setItem("theme", theme);
+  };
+  mode.addEventListener("click", () => {
+    let toggleTheme =
+      localStorage.getItem("theme") === "dark" ? "light" : "dark";
+    setMode(toggleTheme);
+  });
+  setMode(localStorage.getItem("theme") || "dark"); // default dark mode. Other option, use preferenceOS.
+</script>
