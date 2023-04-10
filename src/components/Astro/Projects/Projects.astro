@@ -1,9 +1,25 @@
 ---
+import Card from "./Card.astro";
+import { data } from "../../utils/data";
 ---
 
 <section class="projectContainer">
   <h3 class="subtitle" id="project">Projects</h3>
-  <article class="cardContainer"></article>
+  <article class="cardContainer">
+    {
+      data.map((e) => {
+        return (
+          <Card
+            title={e.title}
+            body={e.body}
+            img={e.img}
+            deploy={e.deploy}
+            link={e.link}
+          />
+        );
+      })
+    }
+  </article>
 </section>
 
 <style>
