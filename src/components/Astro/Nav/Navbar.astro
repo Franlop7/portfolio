@@ -141,7 +141,7 @@ import Theme from "../../svg/theme.astro";
       background-color: var(--color-bg);
       transition: all 0.6s;
     }
-    .theme {
+    .themeMode {
       width: 40px;
       height: 40px;
       margin-top: 30px;
@@ -176,24 +176,24 @@ import Theme from "../../svg/theme.astro";
 <script>
   // Code for toggle menu
   const navToggle = document.querySelector(".navToggle");
-  const navMenu = document.querySelector("menu");
-  // const linkAbout = document.querySelector("linkAbout");
-  // const linkSkills = document.querySelector("linkSkills");
-  // const linkProject = document.querySelector("linkProject");
+  const navMenu = document.querySelector("#menu");
+  const linkAbout = document.querySelector("#linkAbout");
+  const linkSkills = document.querySelector("#linkSkills");
+  const linkProject = document.querySelector("#linkProject");
 
   navToggle.addEventListener("click", () => {
     navMenu.classList.toggle("menuOn");
   });
 
-  // linkAbout.addEventListener("click", () => {
-  //   navMenu.classList.toggle("menuOn");
-  // });
-  // linkProject.addEventListener("click", () => {
-  //   navMenu.classList.toggle("menuOn");
-  // });
-  // linkSkills.addEventListener("click", () => {
-  //   navMenu.classList.toggle("menuOn");
-  // });
+  linkAbout.addEventListener("click", () => {
+    navMenu.classList.toggle("menuOn");
+  });
+  linkProject.addEventListener("click", () => {
+    navMenu.classList.toggle("menuOn");
+  });
+  linkSkills.addEventListener("click", () => {
+    navMenu.classList.toggle("menuOn");
+  });
 
   // Dark mode
   // const preferenceOS = window.matchMedia('(prefers-color-scheme: dark)').matches
