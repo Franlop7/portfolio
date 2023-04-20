@@ -1,0 +1,17 @@
+.aboutContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  padding: 25px;
+  margin-top: 110px;
+}
+
+.aboutText {
+  width: 100%;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: left;
+  margin-bottom: 20px;
+}
