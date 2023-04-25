@@ -11,9 +11,9 @@ import Cv from "../../svg/cv.astro";
     src="/img/avatar.webp"
     alt="Fotografía del desarrollador, Fran López"
   /> -->
-  <h1 class="titleName">Hola, soy Fran López</h1>
+  <h1 class="titleName"><strong class="textgreetings">Hi.</strong> I'm Fran López</h1>
   <h2 class="textDev">
-    Front-End Developer, apasionado de la tecnología y la programación.
+    Front-End Developer, passionate about technology and programming.
   </h2>
   <div class="socialContainer">
     <a
@@ -45,7 +45,7 @@ import Cv from "../../svg/cv.astro";
     class="buttonDownload"
     href="/cv/FranLopez-CV.pdf"
     download="FranLopez-CV"
-    rel="noreferrer noopener"><Cv width="25" height="25" />Descarga mi CV</a
+    rel="noreferrer noopener"><Cv width="25" height="25" />Download CV</a
   >
 </main>
 
@@ -55,8 +55,7 @@ import Cv from "../../svg/cv.astro";
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0;
-    height: 100vh;
+    height: 70vh;
     width: 100%;
     max-width: 880px;
   }
@@ -70,6 +69,10 @@ import Cv from "../../svg/cv.astro";
     font-weight: 600;
     font-style: normal;
     text-align: center;
+  }
+  .textgreetings {
+    color: var(--color-primary);
+    font-size: 6.75rem;
   }
   .textDev {
     font-size: 1.25rem;
@@ -136,6 +139,9 @@ import Cv from "../../svg/cv.astro";
     .textDev {
       font-size: 1rem;
       width: 340px;
+    }
+    .textgreetings {
+      font-size: 5.3rem;
     }
   }
 </style>
