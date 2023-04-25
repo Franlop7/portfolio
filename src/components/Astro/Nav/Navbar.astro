@@ -174,18 +174,14 @@ import Theme from "../../svg/theme.astro";
 </style>
 
 <script>
-  // Code for toggle menu
+  // Toggle menu
   const navToggle = document.querySelector(".navToggle");
   const navMenu = document.querySelector("#menu");
-  const linkAbout = document.querySelector("#linkAbout");
-  const linkSkills = document.querySelector("#linkSkills");
   const linkProject = document.querySelector("#linkProject");
+  const linkSkills = document.querySelector("#linkSkills");
+  const linkAbout = document.querySelector("#linkAbout");
 
   navToggle.addEventListener("click", () => {
-    navMenu.classList.toggle("menuOn");
-  });
-
-  linkAbout.addEventListener("click", () => {
     navMenu.classList.toggle("menuOn");
   });
   linkProject.addEventListener("click", () => {
@@ -194,11 +190,11 @@ import Theme from "../../svg/theme.astro";
   linkSkills.addEventListener("click", () => {
     navMenu.classList.toggle("menuOn");
   });
-
+  linkAbout.addEventListener("click", () => {
+    navMenu.classList.toggle("menuOn");
+  });
+  
   // Dark mode
-  // const preferenceOS = window.matchMedia('(prefers-color-scheme: dark)').matches
-  //   ? 'dark'
-  //   : 'light'
   const mode = document.querySelector(".themeMode");
   const setMode = (theme) => {
     document.documentElement.setAttribute("data-theme", theme);
