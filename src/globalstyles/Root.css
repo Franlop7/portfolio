@@ -3,9 +3,8 @@
 [data-theme="dark"] {
   --color-text-base: #e3e3e2;
   --color-primary: #24a4d2;
-  --color-secondary: #d224a4;
-  --color-bg: #1c1c1c;
-  --color-bg-footer: #0a0a0a;
+  --color-bg: #2e2e2e;
+  --color-bg-footer: #1a1919;
   --color-svg: #e3e3e2;
   --color-btn-bg: #24a4d2;
   --color-btn-hover: #e3e3e2;
@@ -17,9 +16,8 @@
 [data-theme="light"] {
   --color-text-base: #1c1c1c;
   --color-primary: #24a4d2;
-  --color-secondary: #d224a4;
   --color-bg: #e3e3e2;
-  --color-bg-footer: #fff;
+  --color-bg-footer: #eeeeee;
   --color-svg: #1c1c1c;
   --color-btn-bg: #24a4d2;
   --color-btn-hover: #e3e3e2;
