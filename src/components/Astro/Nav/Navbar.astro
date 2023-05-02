@@ -1,6 +1,4 @@
 ---
-// import "./Navbar.css";
-// import "./Navbar.js";
 import Menu from "../../svg/menu.astro";
 import Theme from "../../svg/theme.astro";
 ---
@@ -205,5 +203,5 @@ import Theme from "../../svg/theme.astro";
       localStorage.getItem("theme") === "dark" ? "light" : "dark";
     setMode(toggleTheme);
   });
-  setMode(localStorage.getItem("theme") || "dark"); // default dark mode. Other option, use preferenceOS.
+  setMode(localStorage.getItem("theme") || "dark"); // default dark mode.
 </script>
