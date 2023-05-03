@@ -7,24 +7,24 @@ export const data = [
     link: 'https://github.com/Franlop7/code-paster/'
   },
   {
-    title: 'Codepaster',
-    body: 'Es una web educativa, para compartir codigo. El profesor puede mandar codigo, modificarlo etc.. y el alumno ve los resultados a tiempo real.',
-    img: '/img/codepaster.webp',
-    deploy: 'https://codepaster.net/',
-    link: 'https://github.com/Franlop7/code-paster/'
+    title: 'Editor and Preview Markdown',
+    body: 'It is an editor for markdown code and its markdown code preview. With it you can write in mardown language and in real time it shows you the result. ',
+    img: '/img/editormarkdown.webp',
+    deploy: 'https://markdown-editor-brd.pages.dev/',
+    link: 'https://github.com/Franlop7/Editor-y-Preview-Markdown/'
   },
   {
-    title: 'Codepaster',
-    body: 'Es una web educativa, para compartir codigo. El profesor puede mandar codigo, modificarlo etc.. y el alumno ve los resultados a tiempo real.',
-    img: '/img/codepaster.webp',
-    deploy: 'https://codepaster.net/',
-    link: 'https://github.com/Franlop7/code-paster/'
+    title: 'New project coming soon',
+    body: 'The new projects are more than interesting. We just have to wait a bit longer. If you have any suggestions, dont hesitate to send me an email or contact me through any of my social networks. Thank.',
+    img: '/img/comingsoon.webp',
+    deploy: 'https://franlopez.pages.dev/',
+    link: 'https://github.com/Franlop7/'
   },
   {
-    title: 'Codepaster',
-    body: 'Es una web educativa, para compartir codigo. El profesor puede mandar codigo, modificarlo etc.. y el alumno ve los resultados a tiempo real.',
-    img: '/img/codepaster.webp',
-    deploy: 'https://codepaster.net/',
-    link: 'https://github.com/Franlop7/code-paster/'
+    title: 'New project coming soon',
+    body: 'The new projects are more than interesting. We just have to wait a bit longer. If you have any suggestions, dont hesitate to send me an email or contact me through any of my social networks. Thank.',
+    img: '/img/comingsoon.webp',
+    deploy: 'https://franlopez.pages.dev/',
+    link: 'https://github.com/Franlop7/'
   }
 ]
