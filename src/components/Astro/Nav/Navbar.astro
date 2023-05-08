@@ -172,7 +172,7 @@ import Theme from "@components/svg/theme.astro";
 </style>
 
 <script>
-  // Toggle menu
+  {/* Toggle menu */}
   const navToggle = document.querySelector(".navToggle");
   const navMenu = document.querySelector("#menu");
   const linkProject = document.querySelector("#linkProject");
@@ -192,7 +192,7 @@ import Theme from "@components/svg/theme.astro";
     navMenu.classList.toggle("menuOn");
   });
   
-  // Dark mode
+  {/* Dark mode */}
   const mode = document.querySelector(".themeMode");
   const setMode = (theme) => {
     document.documentElement.setAttribute("data-theme", theme);
@@ -203,5 +203,5 @@ import Theme from "@components/svg/theme.astro";
       localStorage.getItem("theme") === "dark" ? "light" : "dark";
     setMode(toggleTheme);
   });
-  setMode(localStorage.getItem("theme") || "dark"); // default dark mode.
+  setMode(localStorage.getItem("theme") || "dark");{/* default dark mode. */} 
 </script>

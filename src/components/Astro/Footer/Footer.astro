@@ -6,7 +6,9 @@ import Mail from "@components/svg/mail.astro";
 
 <footer class="footer">
   <span class="footerSpan">You are free to use the code</span>
-  <!-- <span class="footerSpan">Podéis utilizar el código, con total libertad</span> -->
+  {
+    /* <span class="footerSpan">Podéis utilizar el código, con total libertad</span> */
+  }
   <div class="FooterContainer">
     <a
       class="svgLink"
@@ -46,35 +48,35 @@ import Mail from "@components/svg/mail.astro";
     font-size: 16px;
     margin-top: 100px;
     min-height: 200px;
-}
+  }
 
-.footerSpan {
+  .footerSpan {
     color: var(--color-text-base);
     padding: 4px 30px;
-}
+  }
 
-.FooterContainer {
+  .FooterContainer {
     display: flex;
     flex-direction: row;
     margin-top: 20px;
     gap: 20px;
-}
+  }
 
-.svgLink {
+  .svgLink {
     fill: var(--color-primary);
     transition: 0.3s;
-}
+  }
 
-.svgLink:hover {
+  .svgLink:hover {
     fill: var(--color-svg);
-}
+  }
 
-.svgMail {
+  .svgMail {
     stroke: var(--color-primary);
     transition: 0.3s;
-}
+  }
 
-.svgMail:hover {
+  .svgMail:hover {
     stroke: var(--color-svg);
-}
+  }
 </style>
