@@ -4,6 +4,13 @@
 
 All commands are run from the root of the project, from a terminal:
 
+```bash
+git clone https://github.com/Franlop7/portfolio.git
+cd portfolio
+npm i
+npm run dev
+```
+
 | Command                | Action                                           |
 | :--------------------- | :----------------------------------------------- |
 | `npm install`          | Installs dependencies                            |
