@@ -21,6 +21,13 @@ export const data = [
     link: 'https://github.com/Franlop7/Master-Front-End/tree/main/modulo7-cloud'
   },
   {
+    title: 'Landing page, FrontEndMentor',
+    body: 'your challenge is to build out a given landing page, get it looking as close as possible to the design given by them, some pictures with the display of the different screen sizes.',
+    img: '/img/landing-clipboard.webp',
+    deploy: 'https://landing-page-clipboard-es.netlify.app/',
+    link: 'https://github.com/Franlop7/landing-clipboard'
+  },
+  {
     title: 'New project coming soon',
     body: 'The new projects are more than interesting. We just have to wait a bit longer. If you have any suggestions, dont hesitate to send me an email or contact me through any of my social networks. Thank.',
     img: '/img/comingsoon.webp',
