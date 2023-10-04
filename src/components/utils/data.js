@@ -28,6 +28,14 @@ export const data = [
     link: 'https://github.com/Franlop7/landing-clipboard'
   },
   {
+    title: 'Chat app',
+    body: 'It is a basic chat, with Google login. You can log in with your account and start a conversation with anyone who is connected.',
+    img: '/img/chat.webp',
+    deploy: 'https://chatvuetify-81325.web.app/',
+    link: 'https://github.com/Franlop7/vue'
+
+  },
+  {
     title: 'New project coming soon',
     body: 'The new projects are more than interesting. We just have to wait a bit longer. If you have any suggestions, dont hesitate to send me an email or contact me through any of my social networks. Thank.',
     img: '/img/comingsoon.webp',
