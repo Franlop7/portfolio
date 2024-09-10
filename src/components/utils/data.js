@@ -1,5 +1,12 @@
 export const data = [
   {
+    title: 'Quick mock',
+    body: 'The goal of this project is to create an open source low fidelity UI mock tool. Thus helping the community with their projects.',
+    img: '/img/quickmock.webp',
+    deploy: 'https://ashy-field-0dcd26f03.5.azurestaticapps.net/',
+    link: 'https://github.com/Lemoncode/quickmock'
+  },
+  {
     title: 'Codepaster',
     body: 'It is an educational website, to share code. The teacher can send code, modify it. and the student sees the results in real time.',
     img: '/img/codepaster.webp',
