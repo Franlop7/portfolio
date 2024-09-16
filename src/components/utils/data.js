@@ -7,18 +7,18 @@ export const data = [
     link: 'https://github.com/Lemoncode/quickmock'
   },
   {
-    title: 'Codepaster',
-    body: 'It is an educational website, to share code. The teacher can send code, modify it. and the student sees the results in real time.',
-    img: '/img/codepaster.webp',
-    deploy: 'https://codepaster.net/',
-    link: 'https://github.com/Franlop7/code-paster/'
-  },
-  {
     title: 'Editor and Preview Markdown',
     body: 'It is an editor for markdown code and its markdown code preview. With it you can write in mardown language and in real time it shows you the result. ',
     img: '/img/editormarkdown.webp',
     deploy: 'https://markdown-editor-brd.pages.dev/',
     link: 'https://github.com/Franlop7/Editor-y-Preview-Markdown/'
+  },
+  {
+    title: 'Codepaster',
+    body: 'It is an educational website, to share code. The teacher can send code, modify it. and the student sees the results in real time.',
+    img: '/img/codepaster.webp',
+    deploy: 'https://codepaster.net/',
+    link: 'https://github.com/Franlop7/code-paster/'
   },
   {
     title: 'How to deploy your websites and app',
