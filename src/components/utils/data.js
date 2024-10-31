@@ -1,5 +1,12 @@
 export const data = [
   {
+    title: 'Mongo Modeler',
+    body: 'Mongo Modeler is a free, online Data Modeling tool for MongoDB. Open source tool for visualization of MongoDB schema design.',
+    img: '/img/mongo-modeler.webp',
+    deploy: 'https://mongomodeler.com/',
+    link: 'https://github.com/Lemoncode/mongo-modeler'
+  },
+  {
     title: 'Quickmock',
     body: 'The goal of this project is to create an open source low fidelity UI mock tool. Thus helping the community with their projects.',
     img: '/img/quickmock.webp',
